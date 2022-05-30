@@ -185,12 +185,12 @@ class WrappedMediaPlayer {
                 self.url = url
                 
                 // stream player position
-                let interval = toCMTime(millis: 0.2)
-                let timeObserver = player.addPeriodicTimeObserver(forInterval: interval, queue: nil) {
-                    [weak self] time in
-                    self!.onTimeInterval(time: time)
-                }
-                self.observers.append(TimeObserver(player: player, observer: timeObserver))
+//                 let interval = toCMTime(millis: 0.2)
+//                 let timeObserver = player.addPeriodicTimeObserver(forInterval: interval, queue: nil) {
+//                     [weak self] time in
+//                     self!.onTimeInterval(time: time)
+//                 }
+//                 self.observers.append(TimeObserver(player: player, observer: timeObserver))
             }
             
             let anObserver = NotificationCenter.default.addObserver(
